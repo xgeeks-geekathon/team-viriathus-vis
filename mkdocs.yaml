@@ -1,0 +1,11 @@
+site_name: ai-starter-template
+site_description: "Main documentation for ai-starter-template project"
+repo_url: https://github.com/xgeeks-geekathon/ai-starter-template.git
+edit_uri: edit/master/docs
+
+# plugins:
+#   - techdocs-core
+
+# For sidebar navigation
+nav:
+  - Getting Started: "index.md"
