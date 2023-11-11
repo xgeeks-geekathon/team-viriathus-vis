@@ -1,11 +1,11 @@
 name: Save Tokens to Azure KV
 # for infra database
-on:
-  workflow_dispatch:
-  push:
-    branches: ['main']
-    paths:
-      - '.github/workflows/save-tokens-to-kv.yaml' # run once only ?
+# on:
+#   workflow_dispatch:
+#   push:
+#     branches: ['main']
+#     paths:
+#       - '.github/workflows/save-tokens-to-kv.yaml' # run once only ?
 
 env:
   TOKENS_JSON: ''

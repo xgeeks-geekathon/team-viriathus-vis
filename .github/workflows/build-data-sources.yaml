@@ -1,12 +1,12 @@
 name: Build Data Source Container
 
-on:
-  workflow_dispatch:
-  push:
-    branches: ['main']
-    paths:
-      - 'blogs/**'
-      - 'dataFeeder/**'
+# on:
+#   workflow_dispatch:
+#   push:
+#     branches: ['main']
+#     paths:
+#       - 'blogs/**'
+#       - 'dataFeeder/**'
   # workflow_run:
   #   workflows: ["Save Tokens to Azure KV"]
   #   branches: [main]

@@ -1,14 +1,14 @@
 name: Build Container Image
 
-on:
-  workflow_dispatch:
-  push:
-    branches: ['main']
-    paths:
-      - 'src/**'
-    exclude:
-      - 'blogs/**'
-      - 'dataFeeder/**'
+# on:
+#   workflow_dispatch:
+#   push:
+#     branches: ['main']
+#     paths:
+#       - 'src/**'
+#     exclude:
+#       - 'blogs/**'
+#       - 'dataFeeder/**'
   # workflow_run:
   #   workflows: ["Save Tokens to Azure KV"]
   #   branches: [main]

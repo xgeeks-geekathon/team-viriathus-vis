@@ -1,13 +1,13 @@
 name: Publish TechDocs Site
 
-on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'docs/**'
-      - 'mkdocs.yml'
-      - '.github/workflows/techdocs.yaml'
+# on:
+#   push:
+#     branches:
+#       - main
+#     paths:
+#       - 'docs/**'
+#       - 'mkdocs.yml'
+#       - '.github/workflows/techdocs.yaml'
 
 jobs:
   publish-techdocs-site:
