@@ -10,7 +10,7 @@ export default function Home() {
     onFinish: (_prompt, answer) => {
       setMessages((prevMessages) => {
         const [first, ...other] = prevMessages;
-        return [[first[0], answer], ...other];
+        return [[answer, first[0]], ...other];
       });
     },
   });
@@ -55,7 +55,7 @@ export default function Home() {
                 )}
 
                 {messages.map((conversation) => {
-                  return conversation.reverse().map((message) => (
+                  return conversation.map((message) => (
                     <div
                       key={message}
                       className="message whitespace-pre-wrap even:bg-gray-500 odd:bg-gray-600 odd:mt-4 text-white p-5"
