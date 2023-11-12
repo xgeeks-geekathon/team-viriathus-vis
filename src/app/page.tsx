@@ -8,13 +8,16 @@ export default function Home() {
   const { completion, complete, isLoading } = useCompletion({
     api: "/api/qa-openai",
     onFinish: (_prompt, answer) => {
-      setMessages((prevMessages) => [answer, ...prevMessages]);
+      setMessages((prevMessages) => {
+        const [first, ...other] = prevMessages;
+        return [[first[0], answer], ...other];
+      });
     },
   });
-  const [messages, setMessages] = useState<string[]>([]);
+  const [messages, setMessages] = useState<Array<string[]>>([]);
 
   const onPromptSubmit = (prompt: string) => {
-    setMessages((prevMessages) => [prompt, ...prevMessages]);
+    setMessages((prevMessages) => [[prompt], ...prevMessages]);
     complete(prompt);
   };
 
@@ -44,20 +47,24 @@ export default function Home() {
                 </button>
               </div>
 
-              {isLoading && !!completion.length && (
-                <div className="message even:bg-gray-500 odd:bg-gray-600 odd:mt-4 text-white p-5">
-                  {completion}
-                </div>
-              )}
+              <div>
+                {isLoading && !!completion.length && (
+                  <div className="message even:bg-gray-500 odd:bg-gray-600 odd:mt-4 text-white p-5">
+                    {completion}
+                  </div>
+                )}
 
-              {messages.map((message) => (
-                <div
-                  key={message}
-                  className="message whitespace-pre-wrap even:bg-gray-500 odd:bg-gray-600 odd:mt-4 text-white p-5"
-                >
-                  {message}
-                </div>
-              ))}
+                {messages.map((conversation) => {
+                  return conversation.reverse().map((message) => (
+                    <div
+                      key={message}
+                      className="message whitespace-pre-wrap even:bg-gray-500 odd:bg-gray-600 odd:mt-4 text-white p-5"
+                    >
+                      {message}
+                    </div>
+                  ));
+                })}
+              </div>
             </div>
           )}
         </div>
