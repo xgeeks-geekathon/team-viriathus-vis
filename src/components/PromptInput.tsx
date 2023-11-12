@@ -1,12 +1,14 @@
 import { useState } from "react";
 
 const prompts: string[] = [
-  "This is my first prompt",
-  "Second prompt with more content",
-  "Third prompt about birds",
-  "Fourth prompt about dogs",
-  "Fifth prompt about cats",
-  "Sixth prompt about animals in general",
+  "What tickets were done on sprint 39/2023?",
+  "Can you provide an update on the current status of the new Product Recommendation Algorithm?",
+  "How much time will it take to complete the tickets pending for sprint '46/2023'?",
+  "Which tickets have we completed on the last sprint?",
+  "What's the progress on the OKR to increase conversion rate",
+  "What tickets have we completed in the past four weeks?",
+  "Which tickets are pending to finish the current sprint?",
+  "Show me the details of the ticket 'Implement Social Authentication'",
 ];
 
 export const PromptInput = ({
