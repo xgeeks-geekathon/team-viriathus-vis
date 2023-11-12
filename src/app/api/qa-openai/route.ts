@@ -9,17 +9,15 @@ const model = "gpt-3.5-turbo-16k";
 
 const data = `Below we define a list of tickets that are describing a development lifecycle of a marketplace application.
 A single ticket is described by the following properties:
-{
   "title": "Title of the jira ticket",
   "assignee": "The person assigned to the ticket",
   "duration": "How many hours the ticket has been in development, null if not yet started",
   "estimate": "How many hours we estimate the ticket will take",
   "time_spent_in_blocked": How many hours the ticket spent in blocked state,
   "status": "The current state of the ticket",
-  "completed_at": "The date when the ticket has been completed",
+  "completed_at": "The date when the ticket has been completed in the format DD-MM-YYY",
   "sprint": "Name of the sprint associated with the ticket",
   "okr": "The Objective associated with this ticket"
-}
 
 Consider the following JSON structure:
 [{
