@@ -7,8 +7,9 @@ dotenv.config({ path: `.env.local` });
 // const model = "gpt-4-1106-preview";
 const model = "gpt-3.5-turbo-16k";
 
-const data = `Below we define a list of tickets in the following structure:
-[{
+const data = `Below we define a list of tickets that are describing a development lifecycle of a marketplace application.
+A single ticket is described by the following properties:
+{
   "title": "Title of the jira ticket",
   "assignees": "An array of the people assigned to the ticket",
   "duration": "How many hours the ticket has been in development, null if not yet started",
@@ -21,7 +22,7 @@ const data = `Below we define a list of tickets in the following structure:
 }
 
 Consider the following JSON structure:
-{
+[{
   "title": "Optimize Database Queries",
   "assignees": ["Alice Brown"],
   "duration": 40,
