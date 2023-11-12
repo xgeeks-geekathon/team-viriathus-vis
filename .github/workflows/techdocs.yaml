@@ -19,7 +19,7 @@ jobs:
       - name: Setup Node
         uses: Staffbase/backstage-techdocs-action@v0.2.0
         with:
-          entity-name: ai-starter-template
+          entity-name: team-viriathus-vis
           entity-kind: Component #(default=Component)
           entity-namespace: default # (default="default")
           publisher-type: "azureBlobStorage" #'awsS3'

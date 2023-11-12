@@ -40,7 +40,7 @@ jobs:
         with:
           # inputs are ['github_token', 'image_name', 'dockerfile-path', 'context', 'registry', 'registry-username', 'tags']
           dockerfile: ./Dockerfile-dataFeeder
-          image_name: xgeeks-geekathon/ai-starter-template-datafeeder
+          image_name: xgeeks-geekathon/team-viriathus-vis-datafeeder
           # for ghcr.io we don't need to specify - it's the default
           # image_name: ghcr.io/xgeeks-geekathon/ai-starter-template-datafeeder
   # ------------------------------------------ job 2
@@ -51,7 +51,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
         with:
-          repository: xgeeks-geekathon/ai-starter-template_deployment
+          repository: xgeeks-geekathon/team-viriathus-vis_deployment
           token: ${{ secrets.IDP_TOKEN }}
 
       - name: Install Kustomize
@@ -65,9 +65,9 @@ jobs:
           cd k8s/overlays/dev
           echo $NEW_TAG
           echo $SHORT_TAG
-          kustomize edit set image ghcr.io/xgeeks-geekathon/ai-starter-template-datafeeder:${{ env.SHORT_TAG }}
+          kustomize edit set image ghcr.io/xgeeks-geekathon/team-viriathus-vis-datafeeder:${{ env.SHORT_TAG }}
           git config --local user.email "actions@github.com"
           git config --local user.name "CD Action"
           git add .
-          git commit -m "ci: update 'ai-starter-template-datafeeder' image tag to '${{ env.SHORT_TAG }}' "
+          git commit -m "ci: update 'team-viriathus-vis-datafeeder' image tag to '${{ env.SHORT_TAG }}' "
           git push

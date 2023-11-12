@@ -48,7 +48,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
         with:
-          repository: xgeeks-geekathon/ai-starter-template_deployment
+          repository: xgeeks-geekathon/team-viriathus-vis_deployment
           token: ${{ secrets.IDP_TOKEN }}
 
       - name: Install Kustomize
@@ -62,9 +62,9 @@ jobs:
           cd k8s/overlays/dev
           echo $NEW_TAG
           echo $SHORT_TAG
-          kustomize edit set image ghcr.io/xgeeks-geekathon/ai-starter-template:${{ env.SHORT_TAG }}
+          kustomize edit set image ghcr.io/xgeeks-geekathon/team-viriathus-vis:${{ env.SHORT_TAG }}
           git config --local user.email "actions@github.com"
           git config --local user.name "CD Action"
           git add .
-          git commit -m "ci: update 'ai-starter-template' image tag to '${{ env.SHORT_TAG }}' "
+          git commit -m "ci: update 'team-viriathus-vis' image tag to '${{ env.SHORT_TAG }}' "
           git push
