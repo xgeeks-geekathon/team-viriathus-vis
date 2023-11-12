@@ -4,12 +4,12 @@ const prompts: string[] = [
   "Show a list of tickets done on the sprint 45/2023?",
   "How much time will it take to complete the tickets pending for sprint 46/2023?",
   "What's our average time spent in blocked?",
-  "What ticket spent more time in blocked? How long was it blocked for?",
-  "What's the progress on the OKR to increase conversion rate?",
+  "Which ticket spent more time blocked? How long was it blocked for?",
+  "Show me the tickets associated with the OKR 'Increase conversion rate'?",
+  "Show me a list with the details of the ticket 'Implement Gamification Elements'",
   "Can you provide an update on the current status of the new Product Recommendation Algorithm?",
   "What tickets have we completed in the past four weeks?",
-  "Which tickets are pending to finish the current sprint?",
-  "Show me the details of the ticket 'Implement Social Authentication'",
+  "Show me a list with the tickets pending to finish the current sprint?",
 ];
 
 export const PromptInput = ({
