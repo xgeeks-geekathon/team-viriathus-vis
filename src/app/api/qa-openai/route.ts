@@ -31,7 +31,7 @@ Consider the following JSON structure:
   "status": "Done",
   "completed_at": "15-09-2023",
   "sprint": "37/2023",
-  "okr": "Improve system performance",
+  "okr": "Improve system performance"
 },
 {
   "title": "Implement Wishlist Feature",
@@ -42,7 +42,7 @@ Consider the following JSON structure:
   "status": "Done",
   "completed_at": "21-09-2023",
   "sprint": "38/2023",
-  "okr": "Improve user engagement",
+  "okr": "Improve user engagement"
 },
 {
   "title": "Fix Security Vulnerabilities",
@@ -53,7 +53,7 @@ Consider the following JSON structure:
   "status": "Done",
   "completed_at": "21-09-2023",
   "sprint": "38/2023",
-  "okr": "Enhance system security",
+  "okr": "Enhance system security"
 },
 {
   "title": "Implement Admin Dashboard",
@@ -64,7 +64,7 @@ Consider the following JSON structure:
   "status": "Done",
   "completed_at": "22-09-2023",
   "sprint": "38/2023",
-  "okr": "Improve admin functionality",
+  "okr": "Improve admin functionality"
 },
 {
   "title": "Enhance Search Functionality",
@@ -75,7 +75,7 @@ Consider the following JSON structure:
   "status": "Done",
   "completed_at": "26-09-2023",
   "sprint": "39/2023",
-  "okr": "Improve user engagement",
+  "okr": "Improve user engagement"
 },
 {
   "title": "Implement Mobile Responsiveness",
@@ -86,7 +86,7 @@ Consider the following JSON structure:
   "status": "Done",
   "completed_at": "26-09-2023",
   "sprint": "39/2023",
-  "okr": "Improve mobile usage and retention",
+  "okr": "Improve mobile usage and retention"
 },
 {
   "title": "Refactor Codebase",
@@ -97,7 +97,7 @@ Consider the following JSON structure:
   "status": "Done",
   "completed_at": "27-09-2023",
   "sprint": "39/2023",
-  "okr": "Neutral",
+  "okr": "Neutral"
 },
 {
   "title": "Implement Customer Reviews",
@@ -108,7 +108,7 @@ Consider the following JSON structure:
   "status": "Done",
   "completed_at": "28-09-2023",
   "sprint": "39/2023",
-  "okr": "Encourage user feedback",
+  "okr": "Encourage user feedback"
 },
 {
   "title": "Fix UI Bugs",
@@ -119,7 +119,7 @@ Consider the following JSON structure:
   "status": "Done",
   "completed_at": "29-09-2023",
   "sprint": "39/2023",
-  "okr": "Neutral",
+  "okr": "Neutral"
 },
 {
   "title": "Implement Social Media Integration",
@@ -130,7 +130,7 @@ Consider the following JSON structure:
   "status": "Done",
   "completed_at": "03-10-2023",
   "sprint": "40/2023",
-  "okr": "Improve user engagement",
+  "okr": "Improve user engagement"
 },
 {
   "title": "Conduct Load Testing",
@@ -141,7 +141,7 @@ Consider the following JSON structure:
   "status": "Done",
   "completed_at": "04-10-2023",
   "sprint": "40/2023",
-  "okr": "Ensure scalability",
+  "okr": "Ensure scalability"
 },
 {
   "title": "Implement Subscription Service",
@@ -152,7 +152,7 @@ Consider the following JSON structure:
   "status": "Done",
   "completed_at": "04-10-2023",
   "sprint": "40/2023",
-  "okr": "Launch product subscriptions",
+  "okr": "Launch product subscriptions"
 },
 {
   "title": "Enhance Product Recommendation Algorithm",
@@ -163,7 +163,7 @@ Consider the following JSON structure:
   "status": "Done",
   "completed_at": "06-10-2023",
   "sprint": "40/2023",
-  "okr": "Enhance recommendation accuracy",
+  "okr": "Enhance recommendation accuracy"
 },
 {
   "title": "Implement Multi-Language Support",
@@ -174,7 +174,7 @@ Consider the following JSON structure:
   "status": "Done",
   "completed_at": "09-10-2023",
   "sprint": "41/2023",
-  "okr": "Internationalise platform",
+  "okr": "Internationalise platform"
 },
 {
   "title": "Fix Checkout Process Issues",
@@ -185,7 +185,7 @@ Consider the following JSON structure:
   "status": "Done",
   "completed_at": "10-10-2023",
   "sprint": "41/2023",
-  "okr": "Increase conversion rate",
+  "okr": "Increase conversion rate"
 },
 {
   "title": "Enhance User Profile Page",
@@ -196,7 +196,7 @@ Consider the following JSON structure:
   "status": "Done",
   "completed_at": "13-10-2023",
   "sprint": "41/2023",
-  "okr": "Enhance user experience",
+  "okr": "Enhance user experience"
 },
 {
   "title": "Implement Real-time Chat",
@@ -207,7 +207,7 @@ Consider the following JSON structure:
   "status": "Done",
   "completed_at": "13-10-2023",
   "sprint": "41/2023",
-  "okr": "Enhance user experience",
+  "okr": "Enhance user experience"
 },
 {
   "title": "Implement AI-Powered Recommendations",
@@ -218,7 +218,7 @@ Consider the following JSON structure:
   "status": "Done",
   "completed_at": "16-10-2023",
   "sprint": "42/2023",
-  "okr": "Enhance recommendation accuracy",
+  "okr": "Enhance recommendation accuracy"
 },
 {
   "title": "Implement Image Recognition for Products",
@@ -229,7 +229,7 @@ Consider the following JSON structure:
   "status": "Done",
   "completed_at": "18-10-2023",
   "sprint": "42/2023",
-  "okr": "Enhance product management",
+  "okr": "Enhance product management"
 },
 {
   "title": "Conduct Usability Testing",
@@ -240,7 +240,7 @@ Consider the following JSON structure:
   "status": "Done",
   "completed_at": "18-10-2023",
   "sprint": "42/2023",
-  "okr": "Neutral",
+  "okr": "Neutral"
 },
 {
   "title": "Implement Push Notifications",
@@ -251,7 +251,7 @@ Consider the following JSON structure:
   "status": "Done",
   "completed_at": "20-10-2023",
   "sprint": "42/2023",
-  "okr": "Improve mobile experience",
+  "okr": "Improve mobile experience"
 },
 {
   "title": "Optimize Mobile App Performance",
@@ -262,7 +262,7 @@ Consider the following JSON structure:
   "status": "Blocked",
   "completed_at": "23-10-2023",
   "sprint": "43/2023",
-  "okr": "Improve mobile experience",
+  "okr": "Improve mobile experience"
 },
 {
   "title": "Enhance Product Page Layout",
@@ -273,7 +273,7 @@ Consider the following JSON structure:
   "status": "Done",
   "completed_at": "24-10-2023",
   "sprint": "43/2023",
-  "okr": "Increase conversion rate",
+  "okr": "Increase conversion rate"
 },
 {
   "title": "Implement Advanced Search Filters",
@@ -284,7 +284,7 @@ Consider the following JSON structure:
   "status": "Done",
   "completed_at": "27-10-2023",
   "sprint": "43/2023",
-  "okr": "Increase conversion rate",
+  "okr": "Increase conversion rate"
 },
 {
   "title": "Enhance Customer Support System",
@@ -295,7 +295,7 @@ Consider the following JSON structure:
   "status": "Done",
   "completed_at": "31-10-2023",
   "sprint": "44/2023",
-  "okr": "Improve customer satisfaction",
+  "okr": "Improve customer satisfaction"
 },
 {
   "title": "Implement Augmented Reality Product Preview",
@@ -306,7 +306,7 @@ Consider the following JSON structure:
   "status": "Done",
   "completed_at": "01-11-2023",
   "sprint": "44/2023",
-  "okr": "Increase conversion rate",
+  "okr": "Increase conversion rate"
 },
 {
   "title": "Implement Gamification Elements",
@@ -317,7 +317,7 @@ Consider the following JSON structure:
   "status": "Done",
   "completed_at": "03-11-2023",
   "sprint": "44/2023",
-  "okr": "Increase conversion rate",
+  "okr": "Increase conversion rate"
 },
 {
   "title": "Optimize Checkout Page Load Time",
@@ -328,7 +328,7 @@ Consider the following JSON structure:
   "status": "In Progress",
   "completed_at": "",
   "sprint": "45/2023",
-  "okr": "Neutral",
+  "okr": "Neutral"
 },
 {
   "title": "Implement Social Authentication",
@@ -339,7 +339,7 @@ Consider the following JSON structure:
   "status": "In Progress",
   "completed_at": "",
   "sprint": "45/2023",
-  "okr": "Increase platform reach",
+  "okr": "Increase platform reach"
 },
 {
   "title": "Implement Dynamic Pricing",
@@ -350,7 +350,7 @@ Consider the following JSON structure:
   "status": "In Progress",
   "completed_at": "",
   "sprint": "45/2023",
-  "okr": "Increase sale margins",
+  "okr": "Increase sale margins"
 },
 {
   "title": "Enhance Seller Dashboard",
@@ -361,7 +361,7 @@ Consider the following JSON structure:
   "status": "To Do",
   "completed_at": "",
   "sprint": "46/2023",
-  "okr": "Improve seller experience",
+  "okr": "Improve seller experience"
 },
 {
   "title": "Implement Voice Search",
@@ -372,7 +372,7 @@ Consider the following JSON structure:
   "status": "To Do",
   "completed_at": "",
   "sprint": "46/2023",
-  "okr": "Increase conversion rate",
+  "okr": "Increase conversion rate"
 },
 {
   "title": "Fix Issue With Dynamicc Pricing",
@@ -383,7 +383,7 @@ Consider the following JSON structure:
   "status": "To Do",
   "completed_at": "",
   "sprint": "46/2023",
-  "okr": "Neutral",
+  "okr": "Neutral"
 }]
 
 Using the data above, and knowing that I am James Martin, we're on the 12th of November of 2023 and the current sprint is "45/2023".
