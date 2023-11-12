@@ -1,12 +1,12 @@
 # Team Viriathus
 
-[Live Demo](https://team-viriathus-dev.xgeeks.tech)
+[Live Demo](https://team-viriathus-vis-dev.xgeeks.tech)
 
 <img width="1305" alt="ScreenShot" src="./assets/demo-viriathus.png">
 
 ## Quickstart
 
-To view the business case of the project please [click here](https://github.com/xgeeks-geekathon/teah-viriathus-viseu/blob/main/BUSINESS_CASE.md)
+To view the business case of the project please [click here](https://github.com/xgeeks-geekathon/team-viriathus-vis/blob/main/BUSINESS_CASE.md)
 
 ## How to run the application locally
 
