@@ -4,6 +4,7 @@ const prompts: string[] = [
   "Show a list of tickets done on the sprint 45/2023?",
   "How much time will it take to complete the tickets pending for sprint 46/2023?",
   "What's our average time spent in blocked?",
+  "What ticket spent more time in blocked? How long was it blocked for?",
   "What's the progress on the OKR to increase conversion rate?",
   "Can you provide an update on the current status of the new Product Recommendation Algorithm?",
   "What tickets have we completed in the past four weeks?",
