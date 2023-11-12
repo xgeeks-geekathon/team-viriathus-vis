@@ -92,7 +92,8 @@ Size: **SMEs** transitioning to large enterprises.
 
 ### **_Phase 3:_** Prototyping and Testing
 
-1\. Prototype Development:  - Use Python, JavaScript for frontend to build the prototype of the AI assistant with basic features for task alignment and Key Result assistance. (WHAT USED FOR BACKEND?)
+1\. Prototype Development:  
+   - Use Python, JavaScript/Typescript for frontend to build the prototype of the AI assistant with basic features for task alignment and Key Result assistance.
 
 2\. User Testing:
 
@@ -112,9 +113,10 @@ Size: **SMEs** transitioning to large enterprises.
 
 1\. Integration with Development Tools:
 
+   - Integrate the AI assistant with project management tools like Jira, Asana, Trello, etc. 
    - Integrate the AI assistant with popular development tools like GitHub, GitLab 
-   - Integrate with monitoring or observability tools like DataDog, Splunk, New Relic, etc.
-   - Integrate with project management tools like Jira, Asana, Trello, etc. 
+   - Integrate the AI assistant with monitoring/observability tools like DataDog, Splunk, New Relic, etc.
+   - Integrate the AI assistant with error tracking tools like Sentry, Rollbar, etc.
 
 2\. Deployment Strategy:
 
