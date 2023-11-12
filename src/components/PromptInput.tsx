@@ -1,11 +1,11 @@
 import { useState } from "react";
 
 const prompts: string[] = [
-  "What tickets were done on sprint 39/2023?",
+  "Show a list of tickets done on the sprint 45/2023?",
+  "How much time will it take to complete the tickets pending for sprint 46/2023?",
+  "What's our average time spent in blocked?",
+  "What's the progress on the OKR to increase conversion rate?",
   "Can you provide an update on the current status of the new Product Recommendation Algorithm?",
-  "How much time will it take to complete the tickets pending for sprint '46/2023'?",
-  "Which tickets have we completed on the last sprint?",
-  "What's the progress on the OKR to increase conversion rate",
   "What tickets have we completed in the past four weeks?",
   "Which tickets are pending to finish the current sprint?",
   "Show me the details of the ticket 'Implement Social Authentication'",
