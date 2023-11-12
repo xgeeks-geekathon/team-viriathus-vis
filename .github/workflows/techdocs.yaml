@@ -1,7 +1,6 @@
 name: Publish TechDocs Site
 
 on:
-  workflow_dispatch:
   push:
     branches:
       - main

@@ -7,13 +7,13 @@ on:
     paths:
       - "blogs/**"
       - "dataFeeder/**"
-  workflow_run:
-    workflows: ["Save Tokens to Azure KV"]
-    branches: [main]
-    types:
-      - completed
-  pull_request:
-    branches: ["main"]
+  # workflow_run:
+  #   workflows: ["Save Tokens to Azure KV"]
+  #   branches: [main]
+  #   types:
+  #     - completed
+  # pull_request:
+  #   branches: ['main']
 
 jobs:
   # ------------------------------------------ job 1
