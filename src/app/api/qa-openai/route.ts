@@ -485,6 +485,7 @@ export async function POST(request: Request) {
 
   const response = await openai.chat.completions.create({
     messages: [{ role: "user", content: data + prompt }],
+    temperature: 0,
     model,
     stream: true,
   });
