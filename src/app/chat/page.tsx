@@ -1,6 +1,6 @@
 "use client";
 import Navbar from "@/components/Navbar";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { useCompletion } from "ai/react";
 import { PromptInput } from "@/components/PromptInput";
 
@@ -20,7 +20,6 @@ export default function Home() {
   });
   const [messages, setMessages] = useState<string[]>([]);
   const [prompt, setPrompt] = useState(input);
-  const formRef = useRef<HTMLFormElement>(null);
 
   const onPromptChange = (e: any) => {
     setPrompt(e.target.value);
@@ -41,6 +40,12 @@ export default function Home() {
           <PromptInput onSubmit={(prompt) => onPromptSubmit(prompt)} />
 
           <div className="messages rounded-b-md min-h-[40px] mb-[20px] bg-gray-800 p-4 mb-5">
+            {isLoading && !!completion.length && (
+              <div className="message even:bg-gray-500 odd:bg-gray-600 odd:mt-4 text-white p-5">
+                {completion}
+              </div>
+            )}
+
             {messages.map((message) => (
               <div
                 key={message}

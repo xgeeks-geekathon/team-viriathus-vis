@@ -56,7 +56,7 @@ export const PromptInput = ({
         value={selectedPrompt}
         onChange={onChange}
         onKeyDown={onKeyDown}
-        className="w-full flex-auto rounded-t-md border-0 px-3.5 py-2 shadow-sm focus:outline-none  sm:text-sm sm:leading-6"
+        className="w-full text-black flex-auto rounded-t-md border-0 px-3.5 py-2 shadow-sm focus:outline-none  sm:text-sm sm:leading-6"
         placeholder="Start typing to get prompt suggestions"
       />
       {suggestedPrompts.length > 0 && (
