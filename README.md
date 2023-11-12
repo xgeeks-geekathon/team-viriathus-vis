@@ -4,6 +4,10 @@
 
 <img width="1305" alt="ScreenShot" src="./assets/demo-viriathus.png">
 
+## Quickstart
+
+To view the business case of the project please [click here](https://github.com/xgeeks-geekathon/teah-viriathus-viseu/blob/main/BUSINESS_CASE.md)
+
 ## How to run the application locally
 
 The simplest way to try out this stack is to test it out locally and traverse through code files to understand how each component work. Here are the steps to get started.
