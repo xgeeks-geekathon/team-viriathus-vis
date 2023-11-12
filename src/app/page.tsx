@@ -43,7 +43,7 @@ export default function Home() {
                   className="ml-auto bg-gray-700 hover:bg-gray-600 text-white font-bold py-1 px-4 rounded"
                   onClick={clearMessages}
                 >
-                  Clear Messages
+                  Clear
                 </button>
               </div>
 
