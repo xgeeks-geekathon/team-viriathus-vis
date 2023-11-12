@@ -1,98 +1,38 @@
-# Geekathon AI Starter Template
+# Team Viriathus
 
-[Live Demo](https://ai-starter-template-dev.xgeeks.tech/)
+[Live Demo](https://team-viriathus-dev.xgeeks.tech)
 
-<img width="1305" alt="ScreenShot" src="./assets/Demo_Screenshot.png">
+<img width="1305" alt="ScreenShot" src="./assets/demo-viriathus.png">
 
-## Stack
-
-- App logic: [Next.js](https://nextjs.org/)
-- VectorDB: [Pinecone](https://www.pinecone.io/)
-- LLM Orchestration: [Langchain.js](https://js.langchain.com/docs/)
-- Image Model: [Replicate](https://replicate.com/)
-- Text Model: [OpenAI](https://platform.openai.com/docs/models)
-- Text streaming: [ai sdk](https://github.com/vercel-labs/ai)
-- Deployment: will be automatic on xgeeks platform
-
-## Overview
-
-- 🚀 [Quickstart](#quickstart)
-
-## Quickstart
+## How to run the application locally
 
 The simplest way to try out this stack is to test it out locally and traverse through code files to understand how each component work. Here are the steps to get started.
 
-### 1. Fork and Clone repo
-
-Fork the repo to your Github account, then run the following command to clone the repo:
-
-```
-git clone git@github.com:xgeeks-geekathon/ai-starter-template.git
-```
-
-### 2. Run Install Script
+### 1. Install dependencies
 
 ```sh
-cd ai-starter-template
-
-# (SOS) make script executable: chmod +x run-install.sh
-./run-install.sh
-#
-# script will:
-## - install npm packages
-## - create a .env file
+npm install
 ```
 
-### 3. Fill out secrets
+### 2. Copy from .env.local.example file
 
-All Geekathon participants will receive an email with api keys, for the required AI tools (OpenAI, Pinecone, Replicate).
-
-```
-you must update your .env.local file with all keys (OpenAI, Pinecone, Replicate)
+```sh
+cp .env.local.example .env.local
 ```
 
-#### 3.1 Geekathon provided secrets (OpenAI)
+### 2.1 Fill out missing secrets
 
-All Geekathon teams will receive an email with an API key for OpenAI.
+Please replace the variables needed with your own credentials
 
-#### 3.2 How to get secrets (Pinecone, Replicate)
+### 3. Run dev server
 
-a. **Replicate API key**
-
-- Visit https://replicate.com/account/api-tokens to get your Replicate API key
-
-b. **Pinecone API key**
-
-- Create a Pinecone index by visiting https://app.pinecone.io/ and click on "Create Index"
-- Give it an index name (this will be the environment variable `PINECONE_INDEX`)
-- Fill in Dimension as `1536`
-- Once the index is successfully created, click on "API Keys" on the left side nav and create an API key: copy "Environment" value to `PINECONE_ENVIRONMENT` variable, and "Value" to `PINECONE_API_KEY`
-
-### 4. Generate embeddings
-
-There are a few markdown files under `/blogs` directory as examples so you can do Q&A on them. To generate embeddings and store them in the vector database for future queries, **you just have to add the new files into this folder, and push a new commit.**
-A github action will be triggered and will create and upload the new embeddings.
-
-**NOTE 1:** the included files are already embedded. You don't have to do anything for those, just for new ones.
-**NOTE 2:** it may take a minute or two to complete. Be patient.
-
-### 4.1. Optionally you can do it manually
-
-#### If using Pinecone
-
-Run the following command to generate embeddings and store them in Pinecone:
-
-```bash
-npm run generate-embeddings-pinecone
+```sh
+npm run dev
 ```
 
-### 5. Run app locally
+### 4. Deploy the app
 
-Now you are ready to test out the app locally! To do this, simply run `npm run dev` under the project root.
-
-### 6. Deploy the app
-
-Just do your code and them commit. :rocket:
+Just do your code and then push it to main branch. :rocket:
 After a few seconds the changes will be live and running.
 You can get some feedback, by looking the github actions pipelines, to check if they have finished.
 
