@@ -7,9 +7,7 @@ dotenv.config({ path: `.env.local` });
 // const model = "gpt-4-1106-preview";
 const model = "gpt-3.5-turbo-16k";
 
-const data = `My name is John Doe, we're on the 12th of November of 2023.
-The current sprint is "45/2023";
-Below we define a list of tickets in the following structure:
+const data = `Below we define a list of tickets in the following structure:
 [{
   "title": "Title of the jira ticket",
   "assignees": "An array of the people assigned to the ticket",
@@ -19,12 +17,12 @@ Below we define a list of tickets in the following structure:
   "status": "The current state of the ticket",
   "completed_at": "The date when the ticket has been complete",
   "sprint": "Name of the sprint associated with the ticket",
-  "okr": "The Objective associated with this ticket",
+  "okr": "The Objective associated with this ticket"
 }
 
 Consider the following JSON structure:
 {
-  "title": "Optimize Database Queries"
+  "title": "Optimize Database Queries",
   "assignees": ["Alice Brown"],
   "duration": 40,
   "estimate": 32,
@@ -35,7 +33,7 @@ Consider the following JSON structure:
   "okr": "Improve system performance",
 },
 {
-  "title": "Implement Wishlist Feature"
+  "title": "Implement Wishlist Feature",
   "assignees": ["John Doe"],
   "duration": 32,
   "estimate": 40,
@@ -46,7 +44,7 @@ Consider the following JSON structure:
   "okr": "Improve user engagement",
 },
 {
-  "title": "Fix Security Vulnerabilities"
+  "title": "Fix Security Vulnerabilities",
   "assignees": ["Alice Brown", "Michael Johnson"],
   "duration": 32,
   "estimate": 32,
@@ -57,7 +55,7 @@ Consider the following JSON structure:
   "okr": "Enhance system security",
 },
 {
-  "title": "Implement Admin Dashboard"
+  "title": "Implement Admin Dashboard",
   "assignees": ["Jane Smith"],
   "duration": 40,
   "estimate": 40,
@@ -68,7 +66,7 @@ Consider the following JSON structure:
   "okr": "Improve admin functionality",
 },
 {
-  "title": "Enhance Search Functionality"
+  "title": "Enhance Search Functionality",
   "assignees": ["John Doe"],
   "duration": 28,
   "estimate": 24,
@@ -79,7 +77,7 @@ Consider the following JSON structure:
   "okr": "Improve user engagement",
 },
 {
-  "title": "Implement Mobile Responsiveness"
+  "title": "Implement Mobile Responsiveness",
   "assignees": ["Alice Brown"],
   "duration": 40,
   "estimate": 32,
@@ -90,7 +88,7 @@ Consider the following JSON structure:
   "okr": "Improve mobile usage and retention",
 },
 {
-  "title": "Refactor Codebase"
+  "title": "Refactor Codebase",
   "assignees": ["Michael Johnson"],
   "duration": 34,
   "estimate": 40,
@@ -101,7 +99,7 @@ Consider the following JSON structure:
   "okr": "Neutral",
 },
 {
-  "title": "Implement Customer Reviews"
+  "title": "Implement Customer Reviews",
   "assignees": ["Jane Smith"],
   "duration": 32,
   "estimate": 32,
@@ -112,7 +110,7 @@ Consider the following JSON structure:
   "okr": "Encourage user feedback",
 },
 {
-  "title": "Fix UI Bugs"
+  "title": "Fix UI Bugs",
   "assignees": ["John Doe"],
   "duration": 16,
   "estimate": 16,
@@ -123,7 +121,7 @@ Consider the following JSON structure:
   "okr": "Neutral",
 },
 {
-  "title": "Implement Social Media Integration"
+  "title": "Implement Social Media Integration",
   "assignees": ["Alice Brown"],
   "duration": 32,
   "estimate": 32,
@@ -134,7 +132,7 @@ Consider the following JSON structure:
   "okr": "Improve user engagement",
 },
 {
-  "title": "Conduct Load Testing"
+  "title": "Conduct Load Testing",
   "assignees": ["Michael Johnson"],
   "duration": 32,
   "estimate": 40,
@@ -145,7 +143,7 @@ Consider the following JSON structure:
   "okr": "Ensure scalability",
 },
 {
-  "title": "Implement Subscription Service"
+  "title": "Implement Subscription Service",
   "assignees": ["Jane Smith"],
   "duration": 88,
   "estimate": 72,
@@ -156,7 +154,7 @@ Consider the following JSON structure:
   "okr": "Launch product subscriptions",
 },
 {
-  "title": "Enhance Product Recommendation Algorithm"
+  "title": "Enhance Product Recommendation Algorithm",
   "assignees": ["John Doe"],
   "duration": 24,
   "estimate": 32,
@@ -167,7 +165,7 @@ Consider the following JSON structure:
   "okr": "Enhance recommendation accuracy",
 },
 {
-  "title": "Implement Multi-Language Support"
+  "title": "Implement Multi-Language Support",
   "assignees": ["Alice Brown"],
   "duration": 32,
   "estimate": 40,
@@ -178,7 +176,7 @@ Consider the following JSON structure:
   "okr": "Internationalise platform",
 },
 {
-  "title": "Fix Checkout Process Issues"
+  "title": "Fix Checkout Process Issues",
   "assignees": ["Michael Johnson"],
   "duration": 40,
   "estimate": 40,
@@ -189,7 +187,7 @@ Consider the following JSON structure:
   "okr": "Increase conversion rate",
 },
 {
-  "title": "Enhance User Profile Page"
+  "title": "Enhance User Profile Page",
   "assignees": ["Jane Smith"],
   "duration": 16,
   "estimate": 16,
@@ -200,7 +198,7 @@ Consider the following JSON structure:
   "okr": "Enhance user experience",
 },
 {
-  "title": "Implement Real-time Chat"
+  "title": "Implement Real-time Chat",
   "assignees": ["John Doe"],
   "duration": 32,
   "estimate": 32,
@@ -211,7 +209,7 @@ Consider the following JSON structure:
   "okr": "Enhance user experience",
 },
 {
-  "title": "Implement AI-Powered Recommendations"
+  "title": "Implement AI-Powered Recommendations",
   "assignees": ["Alice Brown"],
   "duration": 40,
   "estimate": 40,
@@ -222,7 +220,7 @@ Consider the following JSON structure:
   "okr": "Enhance recommendation accuracy",
 },
 {
-  "title": "Implement Image Recognition for Products"
+  "title": "Implement Image Recognition for Products",
   "assignees": ["Michael Johnson"],
   "duration": 24,
   "estimate": 24,
@@ -233,7 +231,7 @@ Consider the following JSON structure:
   "okr": "Enhance product management",
 },
 {
-  "title": "Conduct Usability Testing"
+  "title": "Conduct Usability Testing",
   "assignees": ["Jane Smith"],
   "duration": 16,
   "estimate": 16,
@@ -241,10 +239,10 @@ Consider the following JSON structure:
   "status": "Done",
   "completed_at": "2023-10-18 15:00",
   "sprint": "42/2023",
-  "okr": "Optimize user interface",
+  "okr": "Neutral",
 },
 {
-  "title": "Implement Push Notifications"
+  "title": "Implement Push Notifications",
   "assignees": ["John Doe"],
   "duration": 24,
   "estimate": 24,
@@ -255,7 +253,7 @@ Consider the following JSON structure:
   "okr": "Improve mobile experience",
 },
 {
-  "title": "Optimize Mobile App Performance"
+  "title": "Optimize Mobile App Performance",
   "assignees": ["Alice Brown"],
   "duration": 25,
   "estimate": 32,
@@ -266,7 +264,7 @@ Consider the following JSON structure:
   "okr": "Improve mobile experience",
 },
 {
-  "title": "Enhance Product Page Layout"
+  "title": "Enhance Product Page Layout",
   "assignees": ["Michael Johnson"],
   "duration": 16,
   "estimate": 16,
@@ -274,21 +272,10 @@ Consider the following JSON structure:
   "status": "Done",
   "completed_at": "2023-10-24 15:00",
   "sprint": "43/2023",
-  "okr": "Optimize product presentation",
+  "okr": "Increase conversion rate",
 },
 {
-  "title": "Implement In-App Purchase Functionality"
-  "assignees": ["Jane Smith"],
-  "duration": 30,
-  "estimate": 32,
-  "time_spent_in_blocked": 0,
-  "status": "Done",
-  "completed_at": "2023-10-25 15:00",
-  "sprint": "43/2023",
-  "okr": "Facilitate in-app transactions",
-},
-{
-  "title": "Implement Advanced Search Filters"
+  "title": "Implement Advanced Search Filters",
   "assignees": ["John Doe"],
   "duration": 24,
   "estimate": 24,
@@ -296,10 +283,10 @@ Consider the following JSON structure:
   "status": "Done",
   "completed_at": "2023-10-27 15:00",
   "sprint": "43/2023",
-  "okr": "Optimize search experience",
+  "okr": "Increase conversion rate",
 },
 {
-  "title": "Enhance Customer Support System"
+  "title": "Enhance Customer Support System",
   "assignees": ["Alice Brown"],
   "duration": 40,
   "estimate": 40,
@@ -310,7 +297,7 @@ Consider the following JSON structure:
   "okr": "Improve customer satisfaction",
 },
 {
-  "title": "Implement Augmented Reality Product Preview"
+  "title": "Implement Augmented Reality Product Preview",
   "assignees": ["Michael Johnson"],
   "duration": 32,
   "estimate": 32,
@@ -318,10 +305,10 @@ Consider the following JSON structure:
   "status": "Done",
   "completed_at": "2023-11-01 15:00",
   "sprint": "44/2023",
-  "okr": "Increase time spent on product page",
+  "okr": "Increase conversion rate",
 },
 {
-  "title": "Implement Gamification Elements"
+  "title": "Implement Gamification Elements",
   "assignees": ["Jane Smith"],
   "duration": 24,
   "estimate": 24,
@@ -329,10 +316,10 @@ Consider the following JSON structure:
   "status": "Done",
   "completed_at": "2023-11-03 15:00",
   "sprint": "44/2023",
-  "okr": "Increase customer retention",
+  "okr": "Increase conversion rate",
 },
 {
-  "title": "Optimize Checkout Page Load Time"
+  "title": "Optimize Checkout Page Load Time",
   "assignees": ["John Doe"],
   "duration": 30,
   "estimate": 40,
@@ -340,10 +327,10 @@ Consider the following JSON structure:
   "status": "In Progress",
   "completed_at": "2023-11-10 15:00",
   "sprint": "45/2023",
-  "okr": "Increase customer retention",
+  "okr": "Neutral",
 },
 {
-  "title": "Implement Social Authentication"
+  "title": "Implement Social Authentication",
   "assignees": ["Alice Brown"],
   "duration": 4,
   "estimate": 24,
@@ -351,10 +338,10 @@ Consider the following JSON structure:
   "status": "In Progress",
   "completed_at": "2023-11-10 15:00",
   "sprint": "45/2023",
-  "okr": "Simplify user registration",
+  "okr": "Increase platform reach",
 },
 {
-  "title": "Implement Dynamic Pricing"
+  "title": "Implement Dynamic Pricing",
   "assignees": ["Michael Johnson"],
   "duration": 10,
   "estimate": 32,
@@ -365,29 +352,41 @@ Consider the following JSON structure:
   "okr": "Increase sale margins",
 },
 {
-  "title": "Enhance Seller Dashboard"
+  "title": "Enhance Seller Dashboard",
   "assignees": [],
   "duration": 0,
   "estimate": 24,
   "time_spent_in_blocked": 0,
   "status": "To Do",
-  "completed_at": "2023-11-15 15:00",
+  "completed_at": "",
   "sprint": "46/2023",
-  "okr": "Increase seller retention",
+  "okr": "Improve seller experience",
 },
 {
-  "title": "Implement Voice Search"
+  "title": "Implement Voice Search",
   "assignees": [],
   "duration": 0,
   "estimate": 32,
-  "time_spent_in_blocked": 8,
+  "time_spent_in_blocked": 0,
   "status": "To Do",
-  "completed_at": "2023-11-15 15:00",
+  "completed_at": "",
   "sprint": "46/2023",
-  "okr": "Enhance search accessibility",
+  "okr": "Increase conversion rate",
+},
+{
+  "title": "Fix Issue With Dynamicc Pricing",
+  "assignees": [],
+  "duration": 0,
+  "estimate": 16,
+  "time_spent_in_blocked": 0,
+  "status": "To Do",
+  "completed_at": "",
+  "sprint": "46/2023",
+  "okr": "Neutral",
 }]
 
-Using the JSON data above, answer the following question in the most summarized way possible:\n`;
+Using the JSON data above, and knowing that I am John Doe, we're on the 12th of November of 2023 and the current sprint is "45/2023".
+Answer the following question in the most summarized way possible:\n`;
 
 export async function POST(request: Request) {
   const { prompt } = await request.json();
